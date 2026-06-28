@@ -77,7 +77,7 @@
       "JIS B2220",
       "PARZIALE",
       "data/standards/jis_b2220_vendor.json; campo/sf/sources/jis_b2220_vendor_diamondflanges_jis_standard.pdf; campo/sf/sources/jis_b2220_vendor_axces_5k.pdf; campo/sf/sources/jis_b2220_vendor_weldflange_10k.pdf",
-      "JSON provvisorio estratto per JIS B2220 5K/10K/16K/20K da Diamond Flanges. 30K presente in PDF ma non incluso; Axces 5K e Weldflange 10K come cross-check. Verifica JSA/licenza prima del verde pieno."
+      "JSON provvisorio estratto per JIS B2220 5K/10K/16K/20K e 30K slip-on da Diamond Flanges. 30K weld-neck presente nella stessa pagina ma non ancora normalizzato; DN80 30K slip-on ha warning su valore testo ambiguo. Axces 5K e Weldflange 10K come cross-check. Verifica JSA/licenza prima del verde pieno."
     ],
     [
       "Convenzioni geometriche",

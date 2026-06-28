@@ -1,6 +1,6 @@
 {
   "schema_version": "SF_SOURCE_REGISTER_V1",
-  "updated_at": "2026-06-28T14:37:59+02:00",
+  "updated_at": "2026-06-28T15:37:51+02:00",
   "note": "Registro fonti per completamento libreria Special Flanges. Le fonti vendor scaricate sono materiale operativo provvisorio; le norme ufficiali a pagamento vanno acquistate o fornite da cliente/licenza.",
   "downloaded_sources": [
     {
@@ -222,8 +222,8 @@
     },
     {
       "area": "JIS B2220",
-      "block": "JIS B2220 5K/10K/16K/20K estratto in data/standards/jis_b2220_vendor.json da PDF vendor Diamond Flanges. 30K presente in PDF ma non incluso nel primo JSON; fonti Axces 5K e Weldflange 10K restano cross-check.",
-      "next": "verificare se i disegni richiedono 30K o classi particolari; cross-check contro fonti ausiliarie/JSA prima del verde pieno."
+      "block": "JIS B2220 5K/10K/16K/20K e 30K slip-on estratti in data/standards/jis_b2220_vendor.json da PDF vendor Diamond Flanges. 30K weld-neck presente in PDF ma non normalizzato; DN80 30K slip-on ha un valore testo ambiguo marcato come warning. Fonti Axces 5K e Weldflange 10K restano cross-check.",
+      "next": "verificare se i disegni richiedono 30K weld-neck o solo slip-on; controllare visualmente DN80 30K e cross-check contro fonti ausiliarie/JSA prima del verde pieno."
     }
   ]
 }
