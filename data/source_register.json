@@ -1,6 +1,6 @@
 {
   "schema_version": "SF_SOURCE_REGISTER_V1",
-  "updated_at": "2026-06-28T15:37:51+02:00",
+  "updated_at": "2026-06-28T15:43:34+02:00",
   "note": "Registro fonti per completamento libreria Special Flanges. Le fonti vendor scaricate sono materiale operativo provvisorio; le norme ufficiali a pagamento vanno acquistate o fornite da cliente/licenza.",
   "downloaded_sources": [
     {
@@ -167,6 +167,42 @@
       "repo_path": "data/sources/asme_b16_47_serieB_class900_wermac.html",
       "url": "https://www.wermac.org/flanges/dimensions_welding-neck_blind-flanges_class-900_asme-b16-47-b.html",
       "use": "Wermac ASME B16.47 Series B Class 900; estratto in data/standards/asme_b16.47_serieB.json. Fonte operativa, non norma ufficiale/licenziata."
+    },
+    {
+      "area": "DIN 2633",
+      "kind": "vendor_pdf",
+      "status": "downloaded_pending_json",
+      "path": "campo/sf/sources/din_2633_vendor_marcelforged_pn16.pdf",
+      "repo_path": "data/sources/din_2633_vendor_marcelforged_pn16.pdf",
+      "url": "https://marcelforged.com/wp-content/uploads/images/flanges-pdf/DIN-2633-PN16-Welding-Neck-Flange-Dimensions-Technical-Drawings-Weight.pdf",
+      "use": "DIN 2633 PN16 provvisorio; fonte scaricata, JSON da estrarre"
+    },
+    {
+      "area": "DIN 2634",
+      "kind": "vendor_pdf",
+      "status": "downloaded_pending_json",
+      "path": "campo/sf/sources/din_2634_vendor_marcelforged_pn25.pdf",
+      "repo_path": "data/sources/din_2634_vendor_marcelforged_pn25.pdf",
+      "url": "https://marcelforged.com/wp-content/uploads/images/flanges-pdf/DIN-2634-PN25-Welding-Neck-Flange-Dimensions-Technical-Drawings-Weight.pdf",
+      "use": "DIN 2634 PN25 provvisorio; fonte scaricata, JSON da estrarre"
+    },
+    {
+      "area": "DIN 2635",
+      "kind": "vendor_pdf",
+      "status": "downloaded_pending_json",
+      "path": "campo/sf/sources/din_2635_vendor_marcelforged_pn40.pdf",
+      "repo_path": "data/sources/din_2635_vendor_marcelforged_pn40.pdf",
+      "url": "https://marcelforged.com/wp-content/uploads/images/flanges-pdf/DIN-2635-PN40-Welding-Neck-Flange-Dimensions-Technical-Drawings-Weight.pdf",
+      "use": "DIN 2635 PN40 provvisorio; fonte scaricata, JSON da estrarre"
+    },
+    {
+      "area": "DIN 2636",
+      "kind": "vendor_pdf",
+      "status": "downloaded_pending_json",
+      "path": "campo/sf/sources/din_2636_vendor_marcelforged_pn64.pdf",
+      "repo_path": "data/sources/din_2636_vendor_marcelforged_pn64.pdf",
+      "url": "https://marcelforged.com/wp-content/uploads/images/flanges-pdf/DIN-2636-PN64-Welding-Neck-Flange-Dimensions-Technical-Drawings-Weight.pdf",
+      "use": "DIN 2636 PN64 provvisorio; fonte scaricata, JSON da estrarre"
     }
   ],
   "official_sources_to_buy_or_supply": [
@@ -217,8 +253,8 @@
     },
     {
       "area": "DIN 2632-2637",
-      "block": "DIN 2632 PN10 e DIN 2637 PN100 estratti in data/standards/din_2632_2637_vendor.json da PDF vendor Marcel Forged. DIN 2633-2636 non ancora coperti.",
-      "next": "verificare se nei disegni compaiono PN16/25/40/64; se sì cercare DIN 2633-2636 o fonte aggregata. Cross-check contro norma/licenza prima del verde pieno."
+      "block": "DIN 2632 PN10 e DIN 2637 PN100 estratti in data/standards/din_2632_2637_vendor.json. Fonti vendor Marcel Forged per DIN 2633 PN16, DIN 2634 PN25, DIN 2635 PN40 e DIN 2636 PN64 scaricate in data/sources; JSON 2633-2636 ancora da estrarre/validare.",
+      "next": "estrarre DIN 2633-2636 dai PDF gia in casa oppure decidere, dai disegni, quali PN servono davvero; cross-check contro norma/licenza prima del verde pieno."
     },
     {
       "area": "JIS B2220",

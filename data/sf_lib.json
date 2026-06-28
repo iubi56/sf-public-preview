@@ -69,8 +69,8 @@
       "Standard",
       "DIN 2632-2637",
       "PARZIALE",
-      "data/standards/din_2632_2637_vendor.json; campo/sf/sources/din_2632_vendor_marcelforged_pn10.pdf; campo/sf/sources/din_2637_vendor_marcelforged_pn100.pdf",
-      "JSON provvisorio estratto per DIN 2632 PN10 e DIN 2637 PN100 da PDF vendor Marcel Forged. Restano DIN 2633-2636 se emergono nei disegni, e verifica contro norma/licenza prima del verde pieno."
+      "data/standards/din_2632_2637_vendor.json; campo/sf/sources/din_2632_vendor_marcelforged_pn10.pdf; campo/sf/sources/din_2633_vendor_marcelforged_pn16.pdf; campo/sf/sources/din_2634_vendor_marcelforged_pn25.pdf; campo/sf/sources/din_2635_vendor_marcelforged_pn40.pdf; campo/sf/sources/din_2636_vendor_marcelforged_pn64.pdf; campo/sf/sources/din_2637_vendor_marcelforged_pn100.pdf",
+      "JSON provvisorio estratto per DIN 2632 PN10 e DIN 2637 PN100 da PDF vendor Marcel Forged. PDF vendor per DIN 2633 PN16, 2634 PN25, 2635 PN40 e 2636 PN64 scaricati e tracciati; resta estrazione/validazione JSON se emergono nei disegni."
     ],
     [
       "Standard",
