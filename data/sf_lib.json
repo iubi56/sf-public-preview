@@ -1,6 +1,6 @@
 {
   "titolo": "SF Lib - standard, convenzioni, materiali",
-  "nota": "Preparazione alla progettazione e poi alla operativita': questa pagina non e' uno step A3. Regola semplice: o il pezzo e' in casa, o non e' in casa. Se non e' in casa, va procurato e segnato qui con prossima azione chiara.",
+  "nota": "Preparazione alla progettazione e poi alla operativita': questa pagina non e' uno step A3. Regola semplice: o il pezzo e' in casa, o non e' in casa. Se non e' in casa, va procurato e segnato qui con prossima azione chiara. Regola di pubblicazione: ogni pallino/azione che cambia fonti o standard deve rigenerare docs/mav/standard_fonti_costi.html e sincronizzare https://iubi56.github.io/sf-public-preview/ tramite scripts/sync_public_preview.ps1; altrimenti il pallino resta giallo.",
   "colonne": [
     "Area",
     "Elemento",
@@ -42,7 +42,7 @@
       "ASME B16.47 Serie A Classe 600, NPS26-60",
       "SI",
       "data/standards/asme_b16.47_serieA_cl600.json",
-      "In casa solo Serie A Classe 600."
+      "File storico/sentinella per Classe 600 Serie A; la copertura operativa B16.47 A/B aggiornata e' nella riga successiva."
     ],
     [
       "Standard",
@@ -68,16 +68,16 @@
     [
       "Standard",
       "DIN 2632-2637",
-      "NO",
-      "campo/sf/sources/din_2632_vendor_marcelforged_pn10.pdf; campo/sf/sources/din_2637_vendor_marcelforged_pn100.pdf",
-      "Fonti vendor scaricate: estrarre JSON provvisorio e verificare contro norma/licenza prima del verde."
+      "PARZIALE",
+      "data/standards/din_2632_2637_vendor.json; campo/sf/sources/din_2632_vendor_marcelforged_pn10.pdf; campo/sf/sources/din_2637_vendor_marcelforged_pn100.pdf",
+      "JSON provvisorio estratto per DIN 2632 PN10 e DIN 2637 PN100 da PDF vendor Marcel Forged. Restano DIN 2633-2636 se emergono nei disegni, e verifica contro norma/licenza prima del verde pieno."
     ],
     [
       "Standard",
       "JIS B2220",
-      "NO",
-      "campo/sf/sources/jis_b2220_vendor_diamondflanges_jis_standard.pdf; campo/sf/sources/jis_b2220_vendor_axces_5k.pdf; campo/sf/sources/jis_b2220_vendor_weldflange_10k.pdf",
-      "Fonti vendor scaricate: estrarre JSON provvisorio e verificare contro JSA/licenza prima del verde."
+      "PARZIALE",
+      "data/standards/jis_b2220_vendor.json; campo/sf/sources/jis_b2220_vendor_diamondflanges_jis_standard.pdf; campo/sf/sources/jis_b2220_vendor_axces_5k.pdf; campo/sf/sources/jis_b2220_vendor_weldflange_10k.pdf",
+      "JSON provvisorio estratto per JIS B2220 5K/10K/16K/20K da Diamond Flanges. 30K presente in PDF ma non incluso; Axces 5K e Weldflange 10K come cross-check. Verifica JSA/licenza prima del verde pieno."
     ],
     [
       "Convenzioni geometriche",

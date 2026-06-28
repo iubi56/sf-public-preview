@@ -1,6 +1,6 @@
 {
   "schema_version": "SF_SOURCE_REGISTER_V1",
-  "updated_at": "2026-06-28T14:29:10+02:00",
+  "updated_at": "2026-06-28T14:37:59+02:00",
   "note": "Registro fonti per completamento libreria Special Flanges. Le fonti vendor scaricate sono materiale operativo provvisorio; le norme ufficiali a pagamento vanno acquistate o fornite da cliente/licenza.",
   "downloaded_sources": [
     {
@@ -211,19 +211,19 @@
       "next": "completare tipo 11 weld-neck e spessori PN63/100 oppure marcare esplicitamente lacuna per controlli disegni"
     },
     {
-      "area": "DIN 2632-2637",
-      "block": "PDF vendor PN10 e PN100 presenti; JSON provvisorio non ancora estratto.",
-      "next": "estrarre JSON dai PDF vendor e cercare copertura 2633-2636 se necessaria"
-    },
-    {
-      "area": "JIS B2220",
-      "block": "PDF vendor presenti; JSON provvisorio non ancora estratto.",
-      "next": "estrarre JSON dai PDF vendor e cercare 16K/20K se emergono dai disegni"
-    },
-    {
       "area": "ASME B16.47 Serie A/B",
       "block": "Serie A completa secondo spec #337; Serie B ora estratta in data/standards/asme_b16.47_serieB.json per classi 150/300/400/600/900. Class 900 copre NPS 26-48; Class 75 non trovata/pagina vuota e non inclusa.",
       "next": "verificare se Class 75 serve davvero; se no, marcare esclusione. Cross-check finale Serie A/B contro PDF Federal Flange A/B e fonte ufficiale/licenziata prima del verde pieno."
+    },
+    {
+      "area": "DIN 2632-2637",
+      "block": "DIN 2632 PN10 e DIN 2637 PN100 estratti in data/standards/din_2632_2637_vendor.json da PDF vendor Marcel Forged. DIN 2633-2636 non ancora coperti.",
+      "next": "verificare se nei disegni compaiono PN16/25/40/64; se sì cercare DIN 2633-2636 o fonte aggregata. Cross-check contro norma/licenza prima del verde pieno."
+    },
+    {
+      "area": "JIS B2220",
+      "block": "JIS B2220 5K/10K/16K/20K estratto in data/standards/jis_b2220_vendor.json da PDF vendor Diamond Flanges. 30K presente in PDF ma non incluso nel primo JSON; fonti Axces 5K e Weldflange 10K restano cross-check.",
+      "next": "verificare se i disegni richiedono 30K o classi particolari; cross-check contro fonti ausiliarie/JSA prima del verde pieno."
     }
   ]
 }
