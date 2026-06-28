@@ -1,0 +1,184 @@
+{
+  "schema_version": "SF_SOURCE_REGISTER_V1",
+  "updated_at": "2026-06-28T14:09:05+02:00",
+  "note": "Registro fonti per completamento libreria Special Flanges. Le fonti vendor scaricate sono materiale operativo provvisorio; le norme ufficiali a pagamento vanno acquistate o fornite da cliente/licenza.",
+  "downloaded_sources": [
+    {
+      "area": "JIS B2220",
+      "kind": "vendor_pdf",
+      "status": "downloaded",
+      "path": "campo/sf/sources/jis_b2220_vendor_diamondflanges_jis_standard.pdf",
+      "url": "https://www.diamondflanges.com/cimage11/105319jis_standard.pdf",
+      "use": "tabella dimensionale JIS provvisoria; verificare contro norma/licenza prima di verde"
+    },
+    {
+      "area": "JIS B2220",
+      "kind": "vendor_pdf",
+      "status": "downloaded",
+      "path": "campo/sf/sources/jis_b2220_vendor_axces_5k.pdf",
+      "url": "https://shop.axces.com/media/sheets/Axces-JIS5K-Flanges.pdf",
+      "use": "JIS 5K provvisorio"
+    },
+    {
+      "area": "JIS B2220",
+      "kind": "vendor_pdf",
+      "status": "downloaded",
+      "path": "campo/sf/sources/jis_b2220_vendor_weldflange_10k.pdf",
+      "url": "https://www.weldflange.com/pdf/JIS-B2220-FLANGE-STANDARD-DIMENSIONS-10K.pdf",
+      "use": "JIS 10K provvisorio"
+    },
+    {
+      "area": "DIN 2632",
+      "kind": "vendor_pdf",
+      "status": "downloaded",
+      "path": "campo/sf/sources/din_2632_vendor_marcelforged_pn10.pdf",
+      "url": "https://marcelforged.com/wp-content/uploads/images/flanges-pdf/DIN-2632-PN10-Welding-Neck-Flange-Dimensions-Technical-Drawings-Weight.pdf",
+      "use": "DIN 2632 PN10 provvisorio"
+    },
+    {
+      "area": "DIN 2637",
+      "kind": "vendor_pdf",
+      "status": "downloaded",
+      "path": "campo/sf/sources/din_2637_vendor_marcelforged_pn100.pdf",
+      "url": "https://marcelforged.com/wp-content/uploads/images/flanges-pdf/DIN-2637-PN100-Welding-Neck-Flange-Dimensions-Technical-Drawings-Weight.pdf",
+      "use": "DIN 2637 PN100 provvisorio"
+    },
+    {
+      "area": "EN 1092-1 / DIN",
+      "kind": "vendor_pdf",
+      "status": "downloaded",
+      "path": "campo/sf/sources/din_en_1092_1_vendor_heco_pn10_gt_dn150.pdf",
+      "url": "https://www.heco.de/webservice/downloads/product-sheet/1301/en/heco-product-sheet-1301-Stainless-steel-welding-neck-flanges-PN-10-greater-DN-150.pdf",
+      "use": "EN/DIN PN10 provvisorio per confronto dimensionale"
+    },
+    {
+      "area": "EN 1092-1 PN16",
+      "kind": "public_reference_pdf",
+      "status": "downloaded",
+      "path": "campo/sf/sources/en_1092_1_pn16_roymech.pdf",
+      "repo_path": "data/sources/en_1092_1_pn16_roymech.pdf",
+      "url": "https://roymech.org/Useful_Tables/Flanges/BSEN1092_16_Dimensions.html",
+      "use": "RoyMech PN16 dimensioni EN 1092-1; fonte operativa gratuita, non norma ufficiale; utile per verifica EN PN16 gia' in JSON"
+    },
+    {
+      "area": "EN 1092-1 PN40",
+      "kind": "public_reference_pdf",
+      "status": "downloaded",
+      "path": "campo/sf/sources/en_1092_1_pn40_roymech.pdf",
+      "repo_path": "data/sources/en_1092_1_pn40_roymech.pdf",
+      "url": "https://roymech.org/Useful_Tables/Flanges/BSEN1092_40_Dimensions.html",
+      "use": "RoyMech PN40 dimensioni EN 1092-1; fonte operativa gratuita, non norma ufficiale; utile per verifica/estrazione EN PN40"
+    },
+    {
+      "area": "EN 1092-1 PN25",
+      "kind": "public_reference_pdf",
+      "status": "downloaded",
+      "path": "campo/sf/sources/en_1092_1_pn25_roymech.pdf",
+      "repo_path": "data/sources/en_1092_1_pn25_roymech.pdf",
+      "url": "https://roymech.org/Useful_Tables/Flanges/BSEN1092_25_Dimensions.html",
+      "use": "RoyMech PN25 dimensioni EN 1092-1; fonte operativa gratuita, non norma ufficiale; utile per verifica/estrazione EN PN25."
+    },
+    {
+      "area": "EN 1092-1 / BS4504 multi-PN",
+      "kind": "vendor_pdf",
+      "status": "downloaded",
+      "path": "campo/sf/sources/en_1092_1_bs4504_vendor_globalsupplyline_multi_pn.pdf",
+      "repo_path": "data/sources/en_1092_1_bs4504_vendor_globalsupplyline_multi_pn.pdf",
+      "url": "https://globalsupplyline.com.au/wp-content/uploads/2014/09/Flange-Dim-EN1092-1-BS4504.pdf",
+      "use": "Global Supply Line EN1092-1/BS4504 multi-PN; fonte vendor provvisoria con PN10/16/25/40, utile per coprire PN10 mancante su RoyMech e cross-check multi-PN. Non sostituisce norma ufficiale/licenziata."
+    },
+    {
+      "area": "ASME/ANSI B16.5",
+      "kind": "vendor_pdf_image",
+      "status": "downloaded_visual_only",
+      "path": "campo/sf/sources/asme_b16_5_vendor_federal_flange.pdf",
+      "repo_path": "data/sources/asme_b16_5_vendor_federal_flange.pdf",
+      "url": "https://www.federalflange.com/images/standards/ANSI%20B16.5.pdf",
+      "use": "Federal Flange ANSI B16.5: tabelle visive per classi ANSI, spessori t, diametro raised face e schemi. PDF immagine non testuale; fonte vendor provvisoria, utile per verifica manuale/estrazione assistita."
+    },
+    {
+      "area": "ASME B16.5 RF height",
+      "kind": "technical_reference_html",
+      "status": "downloaded",
+      "path": "campo/sf/sources/asme_b16_5_rf_height_wermac.html",
+      "repo_path": "data/sources/asme_b16_5_rf_height_wermac.html",
+      "url": "https://www.wermac.org/flanges/flanges_rf_height.html",
+      "use": "Wermac RF height: 1/16 inch circa 1.6 mm per classi 150/300; 1/4 inch circa 6.4 mm per classi 400/600/900/1500/2500; nota su misure incluse/escluse. Fonte operativa, non norma ufficiale."
+    },
+    {
+      "area": "ASME B16.5 RF included note",
+      "kind": "technical_reference_html",
+      "status": "downloaded",
+      "path": "campo/sf/sources/asme_b16_5_include_rf_wermac.html",
+      "repo_path": "data/sources/asme_b16_5_include_rf_wermac.html",
+      "url": "https://www.wermac.org/flanges/includeRF.html",
+      "use": "Wermac nota complementare su raised face e lettura dimensioni; cross-check operativo per convenzione RF."
+    },
+    {
+      "area": "ASME B16.47 Series A/B",
+      "kind": "vendor_pdf",
+      "status": "downloaded",
+      "path": "campo/sf/sources/asme_b16_47_series_ab_vendor_federal_flange.pdf",
+      "repo_path": "data/sources/asme_b16_47_series_ab_vendor_federal_flange.pdf",
+      "url": "https://www.federalflange.com/images/standards/B16.47%20A%26B.pdf",
+      "use": "Federal Flange B16.47 Series A/B: classi 75/150/300/400/600/900, Weld Neck & Blind, testo estraibile. Fonte vendor provvisoria utile per coprire altre classi e Serie B; verificare contro ASME ufficiale/licenziata prima del verde."
+    }
+  ],
+  "official_sources_to_buy_or_supply": [
+    {
+      "area": "ASME B16.5",
+      "publisher": "ASME",
+      "url": "https://www.asme.org/codes-standards/find-codes-standards/b16-5-pipe-flanges-flanged-fittings-nps-1-2-nps-24-metric-inch-standard",
+      "observed_price": "da verificare sulla pagina ufficiale prima di acquisto",
+      "needed_for": "spessori, facce, tolleranze, controllo fonte primaria"
+    },
+    {
+      "area": "ASME B16.47",
+      "publisher": "ASME",
+      "url": "https://www.asme.org/codes-standards/find-codes-standards/b16-47-large-diameter-steel-flanges-nps-26-nps-60-metric-inch-standard",
+      "observed_price": "da verificare sulla pagina ufficiale prima di acquisto",
+      "needed_for": "Serie A/B e classi 75/150/300/400/600/900"
+    },
+    {
+      "area": "EN 1092-1",
+      "publisher": "CEN / ente nazionale norme",
+      "url": "https://webstore.ansi.org/standards/din/dinen10922018",
+      "observed_price": "da verificare sullo store/licenza scelta",
+      "needed_for": "altri PN, masse, facce, tolleranze"
+    },
+    {
+      "area": "JIS B2220",
+      "publisher": "JSA / store standard",
+      "url": "https://store.accuristech.com/standards/jsa-jis-b-2220",
+      "observed_price": "da verificare prima di acquisto",
+      "needed_for": "fonte primaria JIS B2220"
+    }
+  ],
+  "open_blocks": [
+    {
+      "area": "ASME B16.5",
+      "block": "Fonti operative Federal Flange + Wermac ora presenti; resta estrazione/normalizzazione RF/spessori e fonte ufficiale/licenziata per verde pieno.",
+      "next": "estrarre/normalizzare RF e spessori; confrontare JSON asme_b16.5 con fonti e marcare source_quality"
+    },
+    {
+      "area": "EN 1092-1 altri PN",
+      "block": "PN6/10/16/25/40/63/100 presenti in forma parziale: PN63/100 senza spessore; tipo 11 weld-neck non coperto.",
+      "next": "completare tipo 11 weld-neck e spessori PN63/100 oppure marcare esplicitamente lacuna per controlli disegni"
+    },
+    {
+      "area": "ASME B16.47 Serie A/B",
+      "block": "Fonte Federal Flange A/B presente; resta estrazione/normalizzazione completa e confronto con JSON Serie A #600.",
+      "next": "estrarre tabelle dal PDF Federal Flange A/B in JSON provvisorio, poi cross-check con asme_b16.47_serieA_cl600.json"
+    },
+    {
+      "area": "DIN 2632-2637",
+      "block": "PDF vendor PN10 e PN100 presenti; JSON provvisorio non ancora estratto.",
+      "next": "estrarre JSON dai PDF vendor e cercare copertura 2633-2636 se necessaria"
+    },
+    {
+      "area": "JIS B2220",
+      "block": "PDF vendor presenti; JSON provvisorio non ancora estratto.",
+      "next": "estrarre JSON dai PDF vendor e cercare 16K/20K se emergono dai disegni"
+    }
+  ]
+}

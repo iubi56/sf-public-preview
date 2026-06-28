@@ -1,0 +1,97 @@
+{
+  "titolo": "SF Lib - standard, convenzioni, materiali",
+  "nota": "Preparazione alla progettazione e poi alla operativita': questa pagina non e' uno step A3. Regola semplice: o il pezzo e' in casa, o non e' in casa. Se non e' in casa, va procurato e segnato qui con prossima azione chiara.",
+  "colonne": [
+    "Area",
+    "Elemento",
+    "In casa?",
+    "Fonte / file",
+    "Cosa manca / cosa fare"
+  ],
+  "righe": [
+    [
+      "Materiali",
+      "Densita' materiali",
+      "SI",
+      "data/materiali_densita.json",
+      "Usare come default; se arriva certificato cliente, prevale il dato cliente."
+    ],
+    [
+      "Fonti",
+      "Canale download standard",
+      "SI",
+      "campo/sf/source_register.json + campo/sf/sources/",
+      "Ogni dato importato deve portarsi dietro fonte, data e qualita' fonte: ufficiale/licenziata oppure vendor provvisoria."
+    ],
+    [
+      "Standard",
+      "ASME/ANSI B16.5: OD + foratura + cerchio bulloni, DN15-600, 7 classi",
+      "SI",
+      "data/standards/asme_b16.5.json",
+      "In casa per dimensioni/foratura; non contiene spessori e faccia rialzata."
+    ],
+    [
+      "Standard",
+      "EN 1092-1 PN16 DN10-600, con spessore",
+      "SI",
+      "data/standards/en_1092-1_pn16.json; campo/sf/sources/en_1092_1_pn16_roymech.pdf",
+      "RoyMech PN16 scaricato come fonte gratuita operativa; resta non ufficiale. Usare per verifica del JSON e dei casi PN16."
+    ],
+    [
+      "Standard",
+      "ASME B16.47 Serie A Classe 600, NPS26-60",
+      "SI",
+      "data/standards/asme_b16.47_serieA_cl600.json",
+      "In casa solo Serie A Classe 600."
+    ],
+    [
+      "Standard",
+      "ASME/ANSI B16.5 spessori + faccia rialzata",
+      "PARZIALE",
+      "data/standards/asme_b16.5.json; campo/sf/sources/asme_b16_5_vendor_federal_flange.pdf; campo/sf/sources/asme_b16_5_rf_height_wermac.html; campo/sf/sources/asme_b16_5_include_rf_wermac.html",
+      "Spessori presenti in JSON e Federal Flange offre tabelle visive ANSI B16.5; Wermac chiarisce RF height 1/16 inch per 150/300 e 1/4 inch per 400+. Resta da estrarre/normalizzare e verificare contro fonte ufficiale/licenziata prima del verde."
+    ],
+    [
+      "Standard",
+      "EN 1092-1 altri PN 6/10/25/40/63/100",
+      "PARZIALE",
+      "data/standards/en_1092-1_tipo01_multiPN.json; campo/sf/sources/en_1092_1_pn16_roymech.pdf; campo/sf/sources/en_1092_1_pn25_roymech.pdf; campo/sf/sources/en_1092_1_pn40_roymech.pdf; campo/sf/sources/en_1092_1_bs4504_vendor_globalsupplyline_multi_pn.pdf",
+      "PN6/10/16/25/40 in multiPN JSON; PN63/100 aggiunti da Global Supply Line per OD/cerchio/foro/n/bullone, senza spessore. PN16/25/40 RoyMech scaricati e leggibili; Global Supply Line copre PN10/16/25/40 e supporta PN63/100. Restano tipo 11 weld-neck, spessori PN63/100 e fonte ufficiale/licenziata prima del verde."
+    ],
+    [
+      "Standard",
+      "ASME/ANSI B16.47 altre classi + Serie B",
+      "PARZIALE",
+      "data/standards/asme_b16.47_serieA.json; data/standards/asme_b16.47_serieA_cl600.json; campo/sf/sources/asme_b16_47_series_ab_vendor_federal_flange.pdf",
+      "Fonte Federal Flange B16.47 Series A/B scaricata e testuale: classi 75/150/300/400/600/900, Weld Neck & Blind. Restano estrazione/normalizzazione JSON completa, verifica contro ASME ufficiale/licenziata e confronto con JSON Serie A #600 gia' in casa."
+    ],
+    [
+      "Standard",
+      "DIN 2632-2637",
+      "NO",
+      "campo/sf/sources/din_2632_vendor_marcelforged_pn10.pdf; campo/sf/sources/din_2637_vendor_marcelforged_pn100.pdf",
+      "Fonti vendor scaricate: estrarre JSON provvisorio e verificare contro norma/licenza prima del verde."
+    ],
+    [
+      "Standard",
+      "JIS B2220",
+      "NO",
+      "campo/sf/sources/jis_b2220_vendor_diamondflanges_jis_standard.pdf; campo/sf/sources/jis_b2220_vendor_axces_5k.pdf; campo/sf/sources/jis_b2220_vendor_weldflange_10k.pdf",
+      "Fonti vendor scaricate: estrarre JSON provvisorio e verificare contro JSA/licenza prima del verde."
+    ],
+    [
+      "Convenzioni geometriche",
+      "Faccia RF/FF/RTJ + smussi",
+      "PARZIALE",
+      "campo/sf/sources/asme_b16_5_rf_height_wermac.html; campo/sf/sources/asme_b16_5_include_rf_wermac.html",
+      "RF height e convenzione incluso/escluso ora coperte da Wermac come fonte operativa. Restano vocabolario completo FF/RTJ, scanalature e smussi, con fonte ufficiale o regole progettuali validate."
+    ],
+    [
+      "Schema dati",
+      "Alias comuni quote/foratura tra standard",
+      "SI",
+      "campo/sf/sf_quote_schema.json",
+      "Schema presente; completare alias quando entrano DIN/JIS/B16.47 resto."
+    ]
+  ]
+}
