@@ -62,8 +62,8 @@
       "Standard",
       "ASME/ANSI B16.47 altre classi + Serie B",
       "PARZIALE",
-      "data/standards/asme_b16.47_serieA.json; data/standards/asme_b16.47_serieA_cl600.json; campo/sf/sources/asme_b16_47_series_ab_vendor_federal_flange.pdf",
-      "Serie A completa: classi 150/300/400/600/900 in data/standards/asme_b16.47_serieA.json. Class 75 non disponibile su Wermac: pagina vuota/niente dati, fonte alternativa solo se serve. Serie B ancora batch separato; PDF Federal Flange A/B presente per confronto fonte vendor."
+      "data/standards/asme_b16.47_serieA.json; data/standards/asme_b16.47_serieB.json; data/standards/asme_b16.47_serieA_cl600.json; campo/sf/sources/asme_b16_47_series_ab_vendor_federal_flange.pdf",
+      "Serie A completa classi 150/300/400/600/900; Serie B estratta classi 150/300/400/600/900. Class 900 Serie B solo NPS 26-48; Class 75 non trovata/pagina vuota e non inclusa. Resta cross-check finale contro Federal Flange/ASME ufficiale prima del verde pieno."
     ],
     [
       "Standard",

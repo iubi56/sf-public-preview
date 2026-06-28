@@ -1,6 +1,6 @@
 {
   "schema_version": "SF_SOURCE_REGISTER_V1",
-  "updated_at": "2026-06-28T14:25:15+02:00",
+  "updated_at": "2026-06-28T14:29:10+02:00",
   "note": "Registro fonti per completamento libreria Special Flanges. Le fonti vendor scaricate sono materiale operativo provvisorio; le norme ufficiali a pagamento vanno acquistate o fornite da cliente/licenza.",
   "downloaded_sources": [
     {
@@ -122,6 +122,51 @@
       "repo_path": "data/sources/asme_b16_47_series_ab_vendor_federal_flange.pdf",
       "url": "https://www.federalflange.com/images/standards/B16.47%20A%26B.pdf",
       "use": "Federal Flange B16.47 Series A/B: classi 75/150/300/400/600/900, Weld Neck & Blind, testo estraibile. Fonte vendor provvisoria utile per coprire altre classi e Serie B; verificare contro ASME ufficiale/licenziata prima del verde."
+    },
+    {
+      "area": "ASME B16.47 Serie B Class 150",
+      "kind": "technical_reference_html",
+      "status": "downloaded_extracted_json",
+      "path": "campo/sf/sources/asme_b16_47_serieB_class150_wermac.html",
+      "repo_path": "data/sources/asme_b16_47_serieB_class150_wermac.html",
+      "url": "https://www.wermac.org/flanges/dimensions_welding-neck_blind-flanges_class-150_asme-b16-47-b.html",
+      "use": "Wermac ASME B16.47 Series B Class 150; estratto in data/standards/asme_b16.47_serieB.json. Fonte operativa, non norma ufficiale/licenziata."
+    },
+    {
+      "area": "ASME B16.47 Serie B Class 300",
+      "kind": "technical_reference_html",
+      "status": "downloaded_extracted_json",
+      "path": "campo/sf/sources/asme_b16_47_serieB_class300_wermac.html",
+      "repo_path": "data/sources/asme_b16_47_serieB_class300_wermac.html",
+      "url": "https://www.wermac.org/flanges/dimensions_welding-neck_blind-flanges_class-300_asme-b16-47-b.html",
+      "use": "Wermac ASME B16.47 Series B Class 300; estratto in data/standards/asme_b16.47_serieB.json. Fonte operativa, non norma ufficiale/licenziata."
+    },
+    {
+      "area": "ASME B16.47 Serie B Class 400",
+      "kind": "technical_reference_html",
+      "status": "downloaded_extracted_json",
+      "path": "campo/sf/sources/asme_b16_47_serieB_class400_wermac.html",
+      "repo_path": "data/sources/asme_b16_47_serieB_class400_wermac.html",
+      "url": "https://www.wermac.org/flanges/dimensions_welding-neck_blind-flanges_class-400_asme-b16-47-b.html",
+      "use": "Wermac ASME B16.47 Series B Class 400; estratto in data/standards/asme_b16.47_serieB.json. Fonte operativa, non norma ufficiale/licenziata."
+    },
+    {
+      "area": "ASME B16.47 Serie B Class 600",
+      "kind": "technical_reference_html",
+      "status": "downloaded_extracted_json",
+      "path": "campo/sf/sources/asme_b16_47_serieB_class600_wermac.html",
+      "repo_path": "data/sources/asme_b16_47_serieB_class600_wermac.html",
+      "url": "https://www.wermac.org/flanges/dimensions_welding-neck_blind-flanges_class-600_asme-b16-47-b.html",
+      "use": "Wermac ASME B16.47 Series B Class 600; estratto in data/standards/asme_b16.47_serieB.json. Fonte operativa, non norma ufficiale/licenziata."
+    },
+    {
+      "area": "ASME B16.47 Serie B Class 900",
+      "kind": "technical_reference_html",
+      "status": "downloaded_extracted_json",
+      "path": "campo/sf/sources/asme_b16_47_serieB_class900_wermac.html",
+      "repo_path": "data/sources/asme_b16_47_serieB_class900_wermac.html",
+      "url": "https://www.wermac.org/flanges/dimensions_welding-neck_blind-flanges_class-900_asme-b16-47-b.html",
+      "use": "Wermac ASME B16.47 Series B Class 900; estratto in data/standards/asme_b16.47_serieB.json. Fonte operativa, non norma ufficiale/licenziata."
     }
   ],
   "official_sources_to_buy_or_supply": [
@@ -177,8 +222,8 @@
     },
     {
       "area": "ASME B16.47 Serie A/B",
-      "block": "Serie A completa secondo spec #337: classi 150/300/400/600/900 estratte in data/standards/asme_b16.47_serieA.json. Class 75 non disponibile su Wermac: pagina vuota/niente dati; resta fonte alternativa solo se serve davvero. Serie B ancora da fare come batch separato.",
-      "next": "non ricercare Class 75 salvo richiesta reale; completare Serie B con stesso pattern, poi confrontare con PDF Federal Flange A/B e marcare source_quality"
+      "block": "Serie A completa secondo spec #337; Serie B ora estratta in data/standards/asme_b16.47_serieB.json per classi 150/300/400/600/900. Class 900 copre NPS 26-48; Class 75 non trovata/pagina vuota e non inclusa.",
+      "next": "verificare se Class 75 serve davvero; se no, marcare esclusione. Cross-check finale Serie A/B contro PDF Federal Flange A/B e fonte ufficiale/licenziata prima del verde pieno."
     }
   ]
 }
