@@ -63,7 +63,7 @@
       "ASME/ANSI B16.47 altre classi + Serie B",
       "PARZIALE",
       "data/standards/asme_b16.47_serieA.json; data/standards/asme_b16.47_serieA_cl600.json; campo/sf/sources/asme_b16_47_series_ab_vendor_federal_flange.pdf",
-      "Fonte Federal Flange B16.47 Series A/B scaricata e testuale: classi 75/150/300/400/600/900, Weld Neck & Blind. Restano estrazione/normalizzazione JSON completa, verifica contro ASME ufficiale/licenziata e confronto con JSON Serie A #600 gia' in casa."
+      "Serie A completa: classi 150/300/400/600/900 in data/standards/asme_b16.47_serieA.json. Class 75 non disponibile su Wermac: pagina vuota/niente dati, fonte alternativa solo se serve. Serie B ancora batch separato; PDF Federal Flange A/B presente per confronto fonte vendor."
     ],
     [
       "Standard",

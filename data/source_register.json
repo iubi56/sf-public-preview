@@ -1,6 +1,6 @@
 {
   "schema_version": "SF_SOURCE_REGISTER_V1",
-  "updated_at": "2026-06-28T14:09:05+02:00",
+  "updated_at": "2026-06-28T14:25:15+02:00",
   "note": "Registro fonti per completamento libreria Special Flanges. Le fonti vendor scaricate sono materiale operativo provvisorio; le norme ufficiali a pagamento vanno acquistate o fornite da cliente/licenza.",
   "downloaded_sources": [
     {
@@ -166,11 +166,6 @@
       "next": "completare tipo 11 weld-neck e spessori PN63/100 oppure marcare esplicitamente lacuna per controlli disegni"
     },
     {
-      "area": "ASME B16.47 Serie A/B",
-      "block": "Fonte Federal Flange A/B presente; resta estrazione/normalizzazione completa e confronto con JSON Serie A #600.",
-      "next": "estrarre tabelle dal PDF Federal Flange A/B in JSON provvisorio, poi cross-check con asme_b16.47_serieA_cl600.json"
-    },
-    {
       "area": "DIN 2632-2637",
       "block": "PDF vendor PN10 e PN100 presenti; JSON provvisorio non ancora estratto.",
       "next": "estrarre JSON dai PDF vendor e cercare copertura 2633-2636 se necessaria"
@@ -179,6 +174,11 @@
       "area": "JIS B2220",
       "block": "PDF vendor presenti; JSON provvisorio non ancora estratto.",
       "next": "estrarre JSON dai PDF vendor e cercare 16K/20K se emergono dai disegni"
+    },
+    {
+      "area": "ASME B16.47 Serie A/B",
+      "block": "Serie A completa secondo spec #337: classi 150/300/400/600/900 estratte in data/standards/asme_b16.47_serieA.json. Class 75 non disponibile su Wermac: pagina vuota/niente dati; resta fonte alternativa solo se serve davvero. Serie B ancora da fare come batch separato.",
+      "next": "non ricercare Class 75 salvo richiesta reale; completare Serie B con stesso pattern, poi confrontare con PDF Federal Flange A/B e marcare source_quality"
     }
   ]
 }
